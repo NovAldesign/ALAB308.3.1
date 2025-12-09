@@ -63,7 +63,7 @@ for (let i = 1; i <= 100; i++) {
 //       cell1 += current;
 //     } else if (commas == 1) {
 //       cell2 += current;
-//     } else if (commas == 3) {
+//     } else if (commas == 2) {
 //       cell3 += current;
 //     } else {
 //       cell4 += current;
