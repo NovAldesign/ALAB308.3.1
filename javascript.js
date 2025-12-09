@@ -32,50 +32,48 @@ for (let i = 1; i <= 100; i++) {
 
 
 
-// All strings (and arrays) have access to the length property
+// // All strings (and arrays) have access to the length property
 
-//  Starting CSV code
-let str = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26`;
+// //  Starting CSV code
+// let str = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26`;
 
-// Variables - we using the empty string so that we can concatenate
-let cell1 = "";
-let cell2 = "";
-let cell3 = "";
-let cell4 = "";
+// // Variables - we using the empty string so that we can concatenate
+// let cell1 = "";
+// let cell2 = "";
+// let cell3 = "";
+// let cell4 = "";
 
-let commas = 0;
+// let commas = 0;
 
-for (let i = 0; i < str.length; i++) {
-  let current = str[i];
+// for (let i = 0; i < str.length; i++) {
+//   let current = str[i];
 
-  if (current == ",") {
-    commas++;
-  } else if (current == "\n") {
-    console.log(cell1, cell2, cell3, cell4);
-    cell1 = '';
-    cell2 = '';
-    cell3 = '';
-    cell4 = '';
+//   if (current == ",") {
+//     commas++;
+//   } else if (current == "\n") {
+//     console.log(cell1, cell2, cell3, cell4);
+//     cell1 = '';
+//     cell2 = '';
+//     cell3 = '';
+//     cell4 = '';
 
-    commas = 0;
-  } else {
-    if (commas == 0) {
-      cell1 += current;
-    } else if (commas == 1) {
-      cell2 += current;
-    } else if (commas == 3) {
-      cell3 += current;
-    } else {
-      cell4 += current;
-    }
-  }
+//     commas = 0;
+//   } else {
+//     if (commas == 0) {
+//       cell1 += current;
+//     } else if (commas == 1) {
+//       cell2 += current;
+//     } else if (commas == 3) {
+//       cell3 += current;
+//     } else {
+//       cell4 += current;
+//     }
+//   }
 
-  if(i + 1 == str.length){
-    console.log(cell1, cell2, cell3, cell4);
-  }
-}
-
-
+//   if(i + 1 == str.length){
+//     console.log(cell1, cell2, cell3, cell4);
+//   }
+// }
 
 
 
@@ -83,26 +81,28 @@ for (let i = 0; i < str.length; i++) {
 
 
 
-// // Starting CSV code
-//ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26
-// // What do we know?
-// // 4 variables for cells, start with an empty string
-// // Cells are separated by commas
-// // Rows are separated by new lines
-
-// // Categories
-// // commas <- very specific <-- New cell  
-// // newline escape sequence <- very specific <- New Row
-// // EVERYTHING else all other chars - populate a cell    
 
 
+// // // Starting CSV code
+// //ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26
+// // // What do we know?
+// // // 4 variables for cells, start with an empty string
+// // // Cells are separated by commas
+// // // Rows are separated by new lines
 
-let str = "ID,Name,Occupation,Age"; 
-
-let someone = str[0] + str[1];
-  console.log(someone);
+// // // Categories
+// // // commas <- very specific <-- New cell  
+// // // newline escape sequence <- very specific <- New Row
+// // // EVERYTHING else all other chars - populate a cell    
 
 
 
+// let str = "ID,Name,Occupation,Age"; 
 
-// Create variables to hold each word separeted by comma in the cell
+// let someone = str[0] + str[1];
+//   console.log(someone);
+
+
+
+
+// // Create variables to hold each word separeted by comma in the cell
